@@ -1,23 +1,12 @@
 ---
 layout: index.njk
-title: Welcome to Space Club!
-description: Check out this home page
-permalink: "/"
+permalink: /
+title: OSIA
+description: Welcome to the Open Source Industry Australia
 ---
-
-# Hello World!
-
-Located on Dione, one of the largest moon's of Saturn, our club hosts regular get togethers.   
-Join us as we share our passion for our space home, whether gathering for meetings, contributing to the wiki and docs, reaching out to other moons, the possibilites are endless!
-
-
-{% set feedTitle = "Latest" %}
-{% set feedWhen = "all" %}
+{% set feedEvents = "no" %}
+{% set feedPosts = "yes" %}
+{% set feedFeatured = "no" %}
+{% set feedLimit = "6" %}
+{% set feedColumns = "3" %}
 {% include "partials/feed.njk" %}
-
-
-{% set text = "Register Now" %}
-{% set link = "https://example.com/register" %}
-{% set icon = "ticket-perforated" %}
-{% set style = "primary" %}
-{% include "partials/btn.njk" %}
